@@ -1,1 +1,16 @@
 <%# TODO: company details page %>
+<h1> <%= @company["name"] %> </h1>
+<h2> <%= @company["city"] %> ,<%= @company["state"] %> </h2>
+
+<h2> Contacts </h2>
+
+<% for contact in @contacts %>
+<li><%= contact["first_name"] %>
+</li>
+<% end %>
+
+
+<p>
+<a href="/companies">Back to all companies</a>
+
+</p>
